@@ -13,3 +13,7 @@ type errors = [
   // @ts-expect-error
   First<{ 0: 'arrayLike' }>,
 ]
+type ages = [1, 2, 3]
+
+type t1 = ages[number]
+// 如果是空数组，返回 undefined

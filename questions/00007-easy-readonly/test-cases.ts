@@ -12,3 +12,15 @@ interface Todo1 {
     author: string
   }
 }
+
+let findF = () => {
+  return { 1: 2 }
+}
+
+type findFT = typeof findF
+
+type testT = keyof Todo1
+
+// keyof 遍历 ts 对象类型
+// T[number] 遍历 ts 数组类型
+// typeof 将 js 内容转化为 ts 类型
